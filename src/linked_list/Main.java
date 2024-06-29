@@ -6,10 +6,13 @@ public class Main {
 		// TODO Auto-generated method stub
 		LinkedList myLinkedList = new LinkedList(4);
 		myLinkedList.append(7);
+		myLinkedList.append(42);
+		myLinkedList.append(11);
 		
-		myLinkedList.getHead();
-		myLinkedList.getTail();
-		myLinkedList.getLength();
+		myLinkedList.printList();
+		
+		System.out.println("Node removed: " + myLinkedList.removeLast().value);
+		System.out.println("Node removed: " + myLinkedList.removeLast().value);
 		
 		myLinkedList.printList();
 	}
