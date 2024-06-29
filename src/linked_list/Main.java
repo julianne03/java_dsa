@@ -14,6 +14,8 @@ public class Main {
 		System.out.println("Node removed: " + myLinkedList.removeLast().value);
 		System.out.println("Node removed: " + myLinkedList.removeLast().value);
 		
+		myLinkedList.prepend(9);
+		
 		myLinkedList.printList();
 	}
 
