@@ -115,7 +115,7 @@ public class LinkedList {
 	}
 	
 	public boolean insert(int index, int value) {
-		if (index < 0 || index >= length) return false;
+		if (index < 0 || index > length) return false;
 		
 		if (index == 0) {
 			prepend(value);
@@ -146,6 +146,24 @@ public class LinkedList {
 		length--;
 		return temp;
 	}
+	
+	public void reverse() {
+		Node temp = head;
+		head = tail;
+		tail = temp;
+		
+		Node after = temp.next;
+		Node before = null;
+		
+		for (int i = 0; i < length; i++) {
+			after = temp.next;
+			temp.next = before;
+			before = temp;
+			temp = after;
+		}
+	}
+	
+	
 
 	public void getHead() {
 		System.out.println("Head: " + head.value);

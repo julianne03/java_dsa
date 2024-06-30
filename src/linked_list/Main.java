@@ -9,15 +9,17 @@ public class Main {
 		myLinkedList.append(2);
 		myLinkedList.append(3);
 		
-		myLinkedList.set(2, 4);
-		
-		myLinkedList.insert(2, 5);
-		myLinkedList.remove(2);
+//		myLinkedList.set(2, 4);
+//		
+//		myLinkedList.insert(2, 5);
+//		myLinkedList.remove(2);
 		
 		myLinkedList.printList();
+		myLinkedList.reverse();
 		System.out.println();
+		myLinkedList.printList();
 		
-		System.out.println(myLinkedList.get(1).value);
+//		System.out.println(myLinkedList.get(1).value);
 //		
 //		System.out.println("Node removed: " + myLinkedList.removeLast().value);
 //		System.out.println("Node removed: " + myLinkedList.removeLast().value);
@@ -25,9 +27,6 @@ public class Main {
 //		myLinkedList.prepend(9);
 //		System.out.println("Node removed: " + myLinkedList.removeFirst().value);
 //		System.out.println("Node removed: " + myLinkedList.removeFirst().value);
-
-		
-		myLinkedList.printList();
 	}
 
 }
