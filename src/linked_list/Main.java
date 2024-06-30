@@ -11,6 +11,8 @@ public class Main {
 		
 		myLinkedList.set(2, 4);
 		
+		myLinkedList.insert(2, 5);
+		
 		myLinkedList.printList();
 		System.out.println();
 		
