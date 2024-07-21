@@ -1,12 +1,14 @@
 package linked_list;
 
+import linked_list.LinkedList.Node;
+
 public class LinkedList {
-	private Node head;
+	Node head;
 	private Node tail;
 	private int length;
 	
 	
-	class Node {
+	public class Node {
 		int value;
 		Node next;
 		
@@ -163,7 +165,16 @@ public class LinkedList {
 		}
 	}
 	
-	
+	public Node findMiddleNode() {
+	    Node slow = head;
+	    Node fast = head;
+	    
+	    while (fast != null && fast.next != null) {
+	    	slow = slow.next;
+	    	fast = fast.next.next;
+	    }
+	    return slow;
+	}
 
 	public void getHead() {
 		System.out.println("Head: " + head.value);
